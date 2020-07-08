@@ -1,6 +1,6 @@
 # Plotly-Challenge
 
-GitHub Page Link:
+GitHub Page Link: https://jua91.github.io/Plotly-Challenge/
 
 This page is created to visualize [Belly Button Biodiversity dataset](http://robdunnlab.com/projects/belly-button-biodiversity/) using JavaScript Data Binding.
 
