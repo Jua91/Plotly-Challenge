@@ -1,6 +1,6 @@
 // Function for adding Options to the select tag
 function addOptions(){
-    d3.json("../../samples.json").then(function(sample){
+    d3.json("../../data/samples.json").then(function(sample){
         // An array of IDs from the metadata
         var metadataID = sample.metadata.map(d=>d.id);
         console.log(metadataID);
