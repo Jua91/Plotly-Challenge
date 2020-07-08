@@ -1,7 +1,7 @@
 // Source: https://com2m.de/blog/technology/gauge-charts-with-plotly/
 
 function plotGauge(selection) {
-    d3.json("../../data/samples.json").then(function(sample){
+    d3.json("../../Plotly-Challenge/data/samples.json").then(function(sample){
 
         var filteredMetaData = sample.metadata.filter(function(m){
             return m.id == selection
