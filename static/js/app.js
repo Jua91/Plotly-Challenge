@@ -1,6 +1,6 @@
 // Function for adding Options to the select tag
 function addOptions(){
-    d3.json("/Plotly-Challenge/data/samples.json").then(function(sample){
+    d3.json("../../Plotly-Challenge/data/samples.json").then(function(sample){
         // An array of IDs from the metadata
         var metadataID = sample.metadata.map(d=>d.id);
         console.log(metadataID);
@@ -23,7 +23,7 @@ function init(){
 
 // Function for plotting charts
 function plotCharts(selection){
-    d3.json("/Plotly-Challenge/data/samples/json").then(function(sample){
+    d3.json("../../Plotly-Challenge/data/samples/json").then(function(sample){
         console.log("Data", sample);
         
         var filteredSamplesData = sample.samples.filter(function(s){
@@ -78,7 +78,7 @@ function plotCharts(selection){
 
 // Display the sample metadata
 function displayData(selection) {
-    d3.json("/Plotly-Challenge/data/samples/json").then(function(sample){
+    d3.json("../../Plotly-Challenge/data/samples/json").then(function(sample){
         
         var filteredData = sample.metadata.filter(function(s){
             return s.id == selection
