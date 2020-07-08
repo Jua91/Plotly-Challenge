@@ -23,7 +23,7 @@ function init(){
 
 // Function for plotting charts
 function plotCharts(selection){
-    d3.json("../../data/samples/json").then(function(sample){
+    d3.json("../../data/samples.json").then(function(sample){
         console.log("Data", sample);
         
         var filteredSamplesData = sample.samples.filter(function(s){
