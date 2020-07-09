@@ -57,7 +57,8 @@ function plotCharts(selection){
             mode: 'markers',
             marker: {
                 size: sampleValues,
-                color: otuID
+                color: otuID,
+                sizeref: 2
             },
             text: otuLabels,
             type: 'scatter'
